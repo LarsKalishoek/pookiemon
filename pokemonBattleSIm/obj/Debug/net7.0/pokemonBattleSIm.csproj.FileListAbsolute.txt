@@ -1,0 +1,15 @@
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\bin\Debug\net7.0\pokemonBattleSIm.exe
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\bin\Debug\net7.0\pokemonBattleSIm.deps.json
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\bin\Debug\net7.0\pokemonBattleSIm.runtimeconfig.json
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\bin\Debug\net7.0\pokemonBattleSIm.dll
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\bin\Debug\net7.0\pokemonBattleSIm.pdb
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\pokemonBattleSIm.csproj.AssemblyReference.cache
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\pokemonBattleSIm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\pokemonBattleSIm.AssemblyInfoInputs.cache
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\pokemonBattleSIm.AssemblyInfo.cs
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\pokemonBattleSIm.csproj.CoreCompileInputs.cache
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\pokemonBattleSIm.dll
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\refint\pokemonBattleSIm.dll
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\pokemonBattleSIm.pdb
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\pokemonBattleSIm.genruntimeconfig.cache
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Debug\net7.0\ref\pokemonBattleSIm.dll
