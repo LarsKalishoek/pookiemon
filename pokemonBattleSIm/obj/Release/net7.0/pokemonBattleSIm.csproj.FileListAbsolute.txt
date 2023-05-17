@@ -1,0 +1,5 @@
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Release\net7.0\pokemonBattleSIm.csproj.AssemblyReference.cache
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Release\net7.0\pokemonBattleSIm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Release\net7.0\pokemonBattleSIm.AssemblyInfoInputs.cache
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Release\net7.0\pokemonBattleSIm.AssemblyInfo.cs
+C:\Users\larsk\OneDrive\Documenten\Projecten-V2\pookiemon\pokemonBattleSIm\obj\Release\net7.0\pokemonBattleSIm.csproj.CoreCompileInputs.cache

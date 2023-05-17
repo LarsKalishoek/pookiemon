@@ -4,38 +4,44 @@ using System;
 
 class Charmander
 {
-  public string name;
-  public string type;
-  public string weakness;
-  public int hp;
+    public string name;
+    public string species = "Charmander";
+    public string type;
+    public string weakness;
+    public int hp;
 
-  public Charmander(string name, string type, string weakness, int hp)
-  {
-    this.name = name;
-    this.type = type;
-    this.weakness = weakness;
-    this.hp = hp;
-  }
-  public string getName()
-  {
-      return name;
-  }
-  public string getType()
-  {
-      return type;
-  }
-  public string getWeakness()
-    { return weakness;}
+    public Charmander(string name, string type, string weakness, int hp)
+    {
+        this.name = name;
+        this.type = type;
+        this.weakness = weakness;
+        this.hp = hp;
+    }
+    public string getName()
+    {
+        return name;
+    }
+    public string getType()
+    {
+        return type;
+    }
+    public string getWeakness()
+    { return weakness; }
 
-  public int getHp()
+    public int getHp()
     { return hp; }
 
-  public void setName(string name)
-  {
-      this.name = name;
-  }
-  public void BattleCry()
+    public void setHp(int hp)
     {
-        Console.WriteLine(this.name); 
+        this.hp = hp;
+    }
+
+    public void setName(string name)
+    {
+        this.name = name;
+    }
+    public void BattleCry()
+    {
+        Console.WriteLine(this.species);
     }
 }
