@@ -17,18 +17,29 @@ internal class Program
         Trainer trainer1 = new Trainer(Trainer_1);
         Trainer trainer2 = new Trainer(Trainer_2);
         bool x = true;
-        for (int i = 0; i <= 5; i++)
+        for (int i = 0; i <= 1; i++)
         {
-            Charmander charmander = new Charmander("charmander", "fire", "water", 100);
-            Pokeball pokeball = new Pokeball(false, charmander);
-            trainer1.AddPokemon(pokeball);
-         
+            Pokemon charmander = new Charmander("charmander", 100);
+            Pokemon bulbasaur = new Bulbasaur("bulbasaur", 100);
+            Pokemon squirtle = new Squirtle("squirtle", 100);
+            Pokeball pokeball1 = new Pokeball(false, charmander);
+            trainer1.AddPokemon(pokeball1);
+            Pokeball pokeball2 = new Pokeball(false, bulbasaur);
+            trainer1.AddPokemon(pokeball2);
+            Pokeball pokeball3 = new Pokeball(false, squirtle);
+            trainer1.AddPokemon(pokeball3);
         }
-        for(int i = 0;i <= 5; i++)
+        for(int i = 0; i <= 1; i++)
         {
-            Charmander charmander = new Charmander("charmander", "fire", "water", 100);
-            Pokeball pokeball = new Pokeball(false, charmander);
-            trainer2.AddPokemon(pokeball);
+            Pokemon charmander = new Charmander("charmander", 100);
+            Pokemon bulbasaur = new Bulbasaur("bulbasaur", 100);
+            Pokemon squirtle = new Squirtle("squirtle", 100);
+            Pokeball pokeball1 = new Pokeball(false, charmander);
+            trainer2.AddPokemon(pokeball1);
+            Pokeball pokeball2 = new Pokeball(false, bulbasaur);
+            trainer2.AddPokemon(pokeball2);
+            Pokeball pokeball3 = new Pokeball(false, squirtle);
+            trainer2.AddPokemon(pokeball3);
         }
         while (x)
         {
@@ -39,21 +50,6 @@ internal class Program
                 trainer2.Throw(i);
                 trainer2.CallBack();
             }
-            //for (int i = 0; i <= 12; i++)
-            //{
-                //trainer1.Throw();
-                //charmander.BattleCry();
-                //trainer1.CallBack();
-            //}
-            //Console.WriteLine("Name: " + charmander.getName());
-            //Console.WriteLine("Type: " + charmander.getType());
-            //Console.WriteLine("Weakness: " + charmander.getWeakness());
-            //Console.WriteLine("Hp: " + charmander.getHp());
-            //pokeball.StateCheck();
-            //for (int i = 0; i <= 10; i++)
-            //{
-            //    charmander.BattleCry();
-            //}
             Console.WriteLine("Do you want to continue y/n: ");
             string check_state = Console.ReadLine().ToLower();
             if (check_state == "y")

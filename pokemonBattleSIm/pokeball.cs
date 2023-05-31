@@ -10,10 +10,10 @@ namespace pokemonBattleSIm
 {
     class Pokeball
     {
-        public Charmander charmander;
+        public Pokemon charmander;
         public bool state;
 
-        public Pokeball(bool state, Charmander charmander)
+        public Pokeball(bool state, Pokemon charmander)
         {
             this.state = state;
             this.charmander = charmander;
@@ -32,14 +32,14 @@ namespace pokemonBattleSIm
         {
             return this.charmander.getHp();
         }
-        public Charmander OpenBall()
+        public Pokemon OpenBall()
         {
             var pokemon = this.charmander;
             this.charmander = null;
             this.state = true;
             return pokemon;
         }
-        public void CloseBall(Charmander charmander)
+        public void CloseBall(Pokemon charmander)
         {
             this.charmander = charmander;
             this.state = false;

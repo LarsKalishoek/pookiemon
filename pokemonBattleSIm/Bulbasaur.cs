@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace pokemonBattleSIm
 {
-    class Charmander : Pokemon
+    class Bulbasaur : Pokemon
     {
-        public Charmander(string name, int hp) : base(name, hp)
+        public Bulbasaur(string name, int hp) : base(name, hp) 
         {
-            this.species = "Charmander";
-            this.type = "Fire";
+            this.species = "Bulbasaur";
+            this.type = "Grass";
             this.weakness = "Water";
         }
         public override void BattleCry()
         {
             Console.WriteLine(this.species);
         }
-    }   
+    }
 
-    
 }

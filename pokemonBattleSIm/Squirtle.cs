@@ -1,24 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace pokemonBattleSIm
 {
-    class Charmander : Pokemon
+    class Squirtle : Pokemon
     {
-        public Charmander(string name, int hp) : base(name, hp)
+        public Squirtle(string name, int hp) : base(name, hp)
         {
-            this.species = "Charmander";
-            this.type = "Fire";
-            this.weakness = "Water";
+            this.species = "Squirtle";
+            this.type = "Water";
+            this.weakness = "Grass";
         }
         public override void BattleCry()
         {
             Console.WriteLine(this.species);
         }
-    }   
-
-    
+    }
 }

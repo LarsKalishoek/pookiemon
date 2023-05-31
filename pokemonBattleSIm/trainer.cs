@@ -10,7 +10,7 @@ namespace pokemonBattleSIm
 {
     class Trainer
     {
-        public Charmander CurrentPkmn;
+        public Pokemon CurrentPkmn;
         public string name;
         public List<Pokeball> belt = new List<Pokeball>();
         public Trainer(string name)
@@ -26,7 +26,7 @@ namespace pokemonBattleSIm
             return name;
         }
 
-        public Charmander Throw(int PokemonIndex)
+        public Pokemon Throw(int PokemonIndex)
         {
             if (CheckField())
             {
