@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pokemonBattleSIm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace pokemonBattleSIm
 {
-    class Trainer
+    internal class Trainer
     {
         public Pokemon CurrentPkmn;
         public string name;
@@ -21,47 +22,46 @@ namespace pokemonBattleSIm
         {
             name = NewName;
         }
-        public string getName() 
+        public string getName()
         {
             return name;
         }
 
-        public Pokemon Throw(int PokemonIndex)
+        public void reviveAll()
         {
-            if (CheckField())
+            foreach (Pokeball pokeball in belt)
             {
-                //Console.WriteLine("Which pokemon do you want to send out? (1/6): ");
-                //int PokemonIndex = Int32.Parse(Console.ReadLine());
-                var pokeball = this.belt[PokemonIndex-1];
-                Console.WriteLine($"{this.name} sent out {pokeball.charmander.getName()}!");
-                pokeball.charmander.BattleCry();
-                this.CurrentPkmn = pokeball.OpenBall();
-                return this.belt[PokemonIndex-1].OpenBall();
+                pokeball.pokemon.setAlive(true);
             }
-            else { return this.CurrentPkmn; }
         }
-        public void CallBack()
+
+        public Pokemon Throw(Pokeball pokeball)
         {
-            Console.WriteLine("Come back " + this.CurrentPkmn.getName()+ "!");
+            Console.WriteLine($"{this.name} sent out {pokeball.pokemon.getName()}!");
+            pokeball.pokemon.BattleCry();
+            return pokeball.OpenBall();
+        }
+        public void CallBack(Pokemon CurrentPkmn)
+        {
+            Console.WriteLine("Come back " + CurrentPkmn.getName() + "!");
             foreach (var pokeball in this.belt)
             {
-                if (pokeball.GetState()) 
+                if (pokeball.GetState())
                 {
                     pokeball.CloseBall(CurrentPkmn);
                 }
             }
-            this.CurrentPkmn = null;
         }
         public void AddPokemon(Pokeball pokeball)
         {
-            if(belt.Count >= 6)
+            if (belt.Count >= 6)
             {
                 Console.WriteLine("It failed! Your team already has 6 pokemon!");
             }
             else
             {
                 this.belt.Add(pokeball);
-                Console.WriteLine($"{pokeball.charmander.getName()} has been added to your team");
+                Console.WriteLine($"{pokeball.pokemon.getName()} has been added to your team");
             }
         }
         public void ShowTeam()
@@ -70,19 +70,58 @@ namespace pokemonBattleSIm
             int index = 1;
             foreach (var pokemon in belt)
             {
-                Console.WriteLine(index + ". " + pokemon.charmander.getName());
+                Console.WriteLine(index + ". " + pokemon.pokemon.getName());
                 index++;
             }
         }
-        public bool CheckField()
+        public bool CheckField(Pokemon CurrentPkmn)
         {
-            if (CurrentPkmn == null) 
-            { 
-                return  true;
-            }
-            else 
+            if (CurrentPkmn == null)
             {
-                return false; 
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public Pokeball pickRandomPokeball()
+        {
+            if (!checkBelt())
+            {
+                return null;
+            }
+            List<Pokeball> pokeballsAvailable = new List<Pokeball>();
+            foreach (Pokeball pokeball in belt)
+            {
+                if (pokeball.getAlive())
+                {
+                    pokeballsAvailable.Add(pokeball);
+                }
+            }
+            Random rnd = new Random();
+            int num = rnd.Next(0, pokeballsAvailable.Count);
+            Pokeball randomPokeball = pokeballsAvailable[num];
+            return randomPokeball;
+        }
+
+        public bool checkBelt()
+        {
+            int pokemonAvailable = 0;
+            foreach (Pokeball pokeball in belt)
+            {
+                if (pokeball.getAlive())
+                {
+                    pokemonAvailable += 1;
+                }
+            }
+            if (pokemonAvailable > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
 

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace pokemonBattleSIm
 {
-    class Charmander : Pokemon
+    internal class Charmander : Pokemon
     {
-        public Charmander(string name, int hp) : base(name, hp)
+        public Charmander(string name, bool alive) : base(name, alive)
         {
             this.species = "Charmander";
             this.type = "Fire";
@@ -18,7 +18,7 @@ namespace pokemonBattleSIm
         {
             Console.WriteLine(this.species);
         }
-    }   
+    }
 
-    
+
 }
